@@ -5,6 +5,7 @@ desc "install the dot files into user's home directory"
 task :install do
   install_oh_my_zsh
   switch_to_zsh
+  clone_vundle
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
   files.each do |file|
@@ -70,4 +71,9 @@ def install_oh_my_zsh
       puts "installing oh-my-zsh"
       system %Q{git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
   end
+end
+
+def clone_vundle
+  puts "clone vundle"
+  system %Q{git clone https://github.com/gmarik/vundle.git vim/bundle/vundle}
 end
