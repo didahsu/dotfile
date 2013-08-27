@@ -3,32 +3,31 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'tpope/vim-surround'
-Bundle 'ap/vim-css-color'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-repeat'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mattn/zencoding-vim'
-Bundle 'godlygeek/tabular'
-Bundle 'quentindecock/vim-cucumber-align-pipes'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'terryma/vim-multiple-cursors'
+Bundle 'http://github.com/gmarik/vundle'
+Bundle 'http://github.com/bling/vim-airline'
+Bundle 'http://github.com/tpope/vim-surround'
+Bundle 'http://github.com/ap/vim-css-color'
+Bundle 'http://github.com/plasticboy/vim-markdown'
+Bundle 'http://github.com/kchmck/vim-coffee-script'
+Bundle 'http://github.com/vim-ruby/vim-ruby'
+Bundle 'http://github.com/tpope/vim-rails'
+Bundle 'http://github.com/scrooloose/nerdtree'
+Bundle 'http://github.com/jistr/vim-nerdtree-tabs'
+Bundle 'http://github.com/scrooloose/nerdcommenter'
+Bundle 'http://github.com/tpope/vim-repeat'
+Bundle 'http://github.com/Lokaltog/vim-easymotion'
+Bundle 'http://github.com/kien/ctrlp.vim'
+Bundle 'http://github.com/pangloss/vim-javascript'
+Bundle 'http://github.com/Raimondi/delimitMate'
+Bundle 'http://github.com/tpope/vim-fugitive'
+Bundle 'http://github.com/mattn/zencoding-vim'
+Bundle 'http://github.com/godlygeek/tabular'
+Bundle 'http://github.com/quentindecock/vim-cucumber-align-pipes'
+Bundle 'http://github.com/nathanaelkane/vim-indent-guides'
+Bundle 'http://github.com/terryma/vim-multiple-cursors'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
+set encoding=utf-8
 set t_Co=256 "讓vim支援256色
 set nocompatible "關閉兼容模式
 set number "顯示行號
@@ -48,7 +47,6 @@ set wildmenu " command line mode 的參考選項
 set wildmode=list:full
 set foldmethod=syntax
 set foldlevel =10
-let g:Powerline_symbols = 'unicode' "Powerline 設定
 set laststatus=2 "狀態列設定 0：永不顯示 1：兩個視窗以上顯示 2：永遠顯示
 map <F2> <plug>NERDTreeTabsToggle<CR>
 let g:html_indent_inctags = "html,body,head,tbody"
