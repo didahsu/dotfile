@@ -3,8 +3,10 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+  install_zsh
   install_oh_my_zsh
   switch_to_zsh
+  install_vim
   clone_vundle
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
@@ -62,6 +64,20 @@ def switch_to_zsh
       puts "switching to zsh"
       system %Q{chsh -s `which zsh`}
   end
+end
+
+def install_zsh
+  if File.exist?(File.join("/bin/zsh"))
+    puts "found /bin/zsh"
+  else
+      puts "installing zsh"
+      system %Q{sudo apt-get install zsh}
+  end
+end
+
+def install_vim
+  puts "installing vim"
+  system %Q{sudo apt-get install vim}
 end
 
 def install_oh_my_zsh
