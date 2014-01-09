@@ -26,6 +26,12 @@ Bundle 'http://github.com/nathanaelkane/vim-indent-guides'
 Bundle 'http://github.com/terryma/vim-multiple-cursors'
 Bundle 'https://github.com/othree/html5.vim'
 Bundle 'https://github.com/mattn/emmet-vim.git'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle "cfurrow/vim-l9"
+Bundle "https://github.com/othree/vim-autocomplpop"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
@@ -86,3 +92,6 @@ let g:multi_cursor_prev_key = '<C-p'
 let g:multi_cursor_skip_key = '<C-x>'
 let g:multi_cursor_quit_key = '<Esc>'
 let g:multi_cursor_start_key = '<F4>'
+
+
+let g:acp_behaviorSnipmateLength = 1
