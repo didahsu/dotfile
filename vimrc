@@ -20,11 +20,12 @@ Bundle 'http://github.com/kien/ctrlp.vim'
 Bundle 'http://github.com/pangloss/vim-javascript'
 Bundle 'http://github.com/Raimondi/delimitMate'
 Bundle 'http://github.com/tpope/vim-fugitive'
-Bundle 'http://github.com/mattn/zencoding-vim'
 Bundle 'http://github.com/godlygeek/tabular'
 Bundle 'http://github.com/quentindecock/vim-cucumber-align-pipes'
 Bundle 'http://github.com/nathanaelkane/vim-indent-guides'
 Bundle 'http://github.com/terryma/vim-multiple-cursors'
+Bundle 'https://github.com/othree/html5.vim'
+Bundle 'https://github.com/mattn/emmet-vim.git'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
