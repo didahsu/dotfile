@@ -32,17 +32,18 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "cfurrow/vim-l9"
 Bundle "https://github.com/othree/vim-autocomplpop"
+Bundle "mileszs/ack.vim"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set t_Co=256 "讓vim支援256色
 set nocompatible "關閉兼容模式
 set number "顯示行號
+set guifont=Monaco:h16
 syntax on "語法高亮
 filetype plugin indent on "自動識別檔案類型
 colorscheme railscasts "顏色配置模式
 set showmatch "顯示對應得括號
-set expandtab "用空白鍵取代Tab
 set hls "反白符合搜尋得字串
 set shiftwidth=2
 set softtabstop=2
@@ -94,4 +95,3 @@ let g:multi_cursor_quit_key = '<Esc>'
 let g:multi_cursor_start_key = '<F4>'
 
 
-let g:acp_behaviorSnipmateLength = 1
